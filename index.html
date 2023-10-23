@@ -1,0 +1,35 @@
+<!--
+    Author: Joseph Cortez
+    Course: CSC 337
+    Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Chatty</title>
+        <script src="./client.js"></script>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+    </head>
+
+    <body>
+        <div id="chatArea"></div>
+
+        <div id="messageArea">
+            <div id="inputFields">
+                <div id="aliasField" class="inputs">
+                    <label for="alias">Alias:</label>
+                    <input type="text" id="alias" name="userAlias" required>
+                </div>
+                <div id="messField" class="inputs">
+                    <label for="message">Message:</label>
+                    <input type="text" id="message" name="userMess" required>
+                </div>
+                <div class="inputs">
+                    <button onclick="postMessage();">Send Response</button>
+                </div>
+            </div>
+            <div id="header">Welcome to Chatty!</div>
+        </div>
+    </body>
+</html>
